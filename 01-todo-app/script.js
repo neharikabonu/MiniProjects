@@ -57,11 +57,15 @@ function createTask(task) {
     name.textContent = newName;
   })
 
+  const actions = document.createElement("div");
+
+  actions.append(editBtn);
+  actions.append(doneBtn);
+  actions.append(deleteBtn);
+
   name.textContent = task;
   li.append(name);
-  li.append(editBtn);
-  li.append(doneBtn);
-  li.append(deleteBtn);
+  li.append(actions);
 
   taskList.append(li);
 }
@@ -86,6 +90,14 @@ addBtn.addEventListener('click', () => {
   updateTaskCount();
 
   taskInput.value = "";
+
+  taskInput.focus();
+})
+
+taskInput.addEventListener("keydown", (event) => {
+  if(event.key === "Enter") {
+    addBtn.click();
+  }
 })
 
 clearBtn.addEventListener("click", () => {
@@ -94,3 +106,4 @@ clearBtn.addEventListener("click", () => {
   localStorage.removeItem("tasks");
   updateTaskCount();
 });
+
