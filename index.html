@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+        }
+
+        .project h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 22px;
+            flex: 1;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .live {
+            background: #24292f;
+            color: white;
+        }
+
+        .github {
+            border: 1px solid #24292f;
+            color: #24292f;
+            background: white;
+        }
+
+        .buttons a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Mini Projects</h1>
+            <p>A collection of small projects built while learning and practicing.</p>
+        </header>
+
+        <main class="projects">
+
+            <!-- Todo App -->
+            <div class="project">
+                <h2>📝 Todo App</h2>
+
+                <p>
+                    A simple responsive to-do list application built
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="./01-todo-app/"
+                        class="live"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a
+                        href="https://github.com/neharikabonu/MiniProjects/tree/main/01-todo-app"
+                        class="github"
+                        target="_blank">
+                        View Code
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Calculator -->
+            <div class="project">
+                <h2>🧮 Calculator</h2>
+
+                <p>
+                    A functional calculator built using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="./Calculator/"
+                        class="live"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a
+                        href="https://github.com/neharikabonu/MiniProjects/tree/main/Calculator"
+                        class="github"
+                        target="_blank">
+                        View Code
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Library Management System -->
+            <div class="project">
+                <h2>📚 Library Management System</h2>
+
+                <p>
+                    A Java-based library management system
+                    for managing books and library operations.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="https://github.com/neharikabonu/MiniProjects/tree/main/LibraryManagementSystem"
+                        class="github"
+                        target="_blank">
+                        View Code
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Portfolio -->
+            <div class="project">
+                <h2>💼 Portfolio</h2>
+
+                <p>
+                    A personal portfolio website built using
+                    HTML and CSS to showcase skills and projects.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="./Portfolio/"
+                        class="live"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a
+                        href="https://github.com/neharikabonu/MiniProjects/tree/main/Portfolio"
+                        class="github"
+                        target="_blank">
+                        View Code
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Student Management System -->
+            <div class="project">
+                <h2>🎓 Student Management System</h2>
+
+                <p>
+                    A Java-based student management system
+                    for performing basic student operations.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="https://github.com/neharikabonu/MiniProjects/tree/main/StudentManagementSystem"
+                        class="github"
+                        target="_blank">
+                        View Code
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <p>© 2026 Neharika Bonu · Mini Projects</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
